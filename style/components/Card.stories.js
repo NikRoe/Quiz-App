@@ -1,7 +1,3 @@
-import DefaultHtml from "./styles/components/Card.default.html";
-
-export const Deeeefault = () => DefaultHtml;
-
 export default {
   title: "Card",
 };
