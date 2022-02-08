@@ -2,4 +2,5 @@
 @import url(style/variables.css);
 @import url(style/components/Card.css);
 @import url(style/components/Navbar.css);
+@import url(style/components/Title.css);
 @import url(style/utils.css);
