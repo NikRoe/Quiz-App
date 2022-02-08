@@ -1,0 +1,16 @@
+.Card {
+  background-color: white;
+  border: 5px solid #eeeeee;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.Card__title {
+  color: maroon;
+  text-decoration: underline;
+  margin-top: 0rem;
+}
