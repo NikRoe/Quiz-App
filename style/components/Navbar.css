@@ -1,7 +1,9 @@
 .Navbar__wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 97.75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: white;
   border-radius: 2rem;
   padding: 0.5rem;
@@ -13,6 +15,7 @@
   text-decoration: none;
   padding: 0.7rem;
   border-radius: 2rem;
+  gap: 1rem;
 }
 
 .Navbar--highlight {
