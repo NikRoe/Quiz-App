@@ -1,0 +1,20 @@
+.Navbar__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.Navbar__content {
+  background-color: #eff6ff;
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+}
+
+.Navbar--highlight {
+  background-color: lightgray;
+}
