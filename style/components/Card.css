@@ -24,7 +24,7 @@
 }
 
 .Card__tags {
-  background-color: #eff6ff;
+  background-color: rgba(128, 0, 0, 0.5);
   color: black;
   text-decoration: none;
   padding: 0.7rem;
