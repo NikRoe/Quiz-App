@@ -5,7 +5,11 @@ export default {
 export const Default = () => /*html*/ `
 <article class="Card">
   <h2 class="Card__title">Frage 1</h2>
-  <p class="Card__bookmark"></p>
+  <img
+  src="assets/bookmark-svgrepo-com.svg"
+  alt="unchecked bookmark"
+  class="Card__bookmark"
+/>
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -25,7 +29,11 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 export const HideAnswer = () => /* html */ `
 <article class="Card">
   <h2 class="Card__title">Frage 1</h2>
-  <p class="Card__bookmark"></p>
+  <img
+  src="assets/bookmark-svgrepo-com.svg"
+  alt="unchecked bookmark"
+  class="Card__bookmark"
+/>
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -46,7 +54,11 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 export const Bookmarked = () => /* html */ `
 <article class="Card">
   <h2 class="Card__title">Frage 1</h2>
-  <p class="Card__bookmark--active"></p>
+  <img
+  src="assets/bookmark-alt-svgrepo-com.svg"
+  alt="checked bookmark"
+  class="Card__bookmark--active"
+/>
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
