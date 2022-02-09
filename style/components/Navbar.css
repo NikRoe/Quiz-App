@@ -12,13 +12,20 @@
 }
 
 .Navbar__content {
-  background-color: #eff6ff;
-  color: black;
+  background-color: lightgray;
+  color: rgb(243, 239, 239);
   text-decoration: none;
   padding: 0.7rem;
   border-radius: 2rem;
+  color: black;
 }
 
-.Navbar--highlight {
-  background-color: lightgray;
+.Navbar--active {
+  background-color: lightskyblue;
+  color: black;
+}
+
+a:hover {
+  background: lightblue;
+  cursor: pointer;
 }
