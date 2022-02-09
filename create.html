@@ -12,38 +12,48 @@
       <h1 class="Title">Create</h1>
     </header>
     <main>
-      <h2 id="form-heading" class="Form__outertext">Eigene Fragen erstellen</h2>
+      <h2 id="form-heading" class="Form__outertext">
+        Create your own questions
+      </h2>
       <p id="form-description" class="Form__outertext">
         Here you may create your own questions - answer cards and assign several
         tags
       </p>
       <form aria-labelledby="form-heading" aria-describedby="form-description">
         <fieldset class="Form__fieldset">
-          <label for="question-input" class="Textarea">Question</label>
+          <label for="question-input" class="Form__label">Question</label>
           <textarea
             class="Form__textarea"
             name="question-input"
             id="question-input"
-            placeholder="Enter your question"
-            rows="10"
+            placeholder="Enter question..."
+            rows="5"
+            cols="30"
+            required
           ></textarea>
         </fieldset>
         <fieldset class="Form__fieldset">
-          <label for="answer-input" class="Textarea">Answer</label>
+          <label for="answer-input" class="Form__label">Answer</label>
           <textarea
+            class="Form__textarea"
             name="answer-input"
             id="answer-input"
-            placeholder="Enter answer"
-            rows="10"
+            placeholder="Enter answer..."
+            rows="5"
+            cols="30"
+            required
           ></textarea>
         </fieldset>
         <fieldset class="Form__fieldset">
-          <label for="tag-input" class="Textarea">Tags</label>
+          <label for="tag-input" class="Form__label">Tags</label>
           <textarea
+            class="Form__textarea"
             name="tag-input"
             id="tag-input"
-            placeholder="Assign tags; separate by colon."
-            rows="10"
+            placeholder="Choose tags; separate by colon."
+            rows="5"
+            cols="50"
+            required
           ></textarea>
         </fieldset>
         <label>
