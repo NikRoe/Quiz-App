@@ -3,13 +3,13 @@
   justify-content: center;
 }
 
-.Button__submit {
+.Button__default {
   font-family: inherit;
   cursor: pointer;
-  background-color: lightblue;
+  background-color: #eff6ff;
   padding: 1rem;
   border: white 1rem solid;
-  border-radius: 10%;
+  border-radius: 50%;
   font-size: large;
 }
 
