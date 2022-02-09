@@ -1,0 +1,18 @@
+.Button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.Button__submit {
+  font-family: inherit;
+  cursor: pointer;
+  background-color: lightblue;
+  padding: 1rem;
+  border: white 1rem solid;
+  border-radius: 10%;
+  font-size: large;
+}
+
+/* .Button__submit:hover {
+  background-color: lightsteelblue;
+} */
