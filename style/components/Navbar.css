@@ -25,7 +25,7 @@
   color: black;
 }
 
-a:hover {
+.Navbar__content:hover {
   background: lightblue;
   cursor: pointer;
 }

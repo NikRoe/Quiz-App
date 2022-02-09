@@ -1,4 +1,5 @@
 .Card {
+  position: relative;
   background-color: white;
   border: 5px solid #eeeeee;
   padding: 1rem;
@@ -28,4 +29,28 @@
   text-decoration: none;
   padding: 0.7rem;
   border-radius: 2rem;
+}
+
+.Card__bookmark {
+  position: absolute;
+  top: -30px;
+  right: 25px;
+  height: 3rem;
+  width: 7rem;
+  background-color: lightgray;
+}
+
+.Card__bookmark--active {
+  position: absolute;
+  top: -30px;
+  right: 25px;
+  height: 3rem;
+  width: 7rem;
+  background-color: lightskyblue;
+}
+
+.Card__bookmark:hover,
+.Card__bookmark--active:hover {
+  background: lightblue;
+  cursor: pointer;
 }
