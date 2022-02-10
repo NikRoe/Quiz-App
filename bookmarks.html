@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Quiz App</title>
+    <title>Bookmarks</title>
   </head>
   <body>
-    <header>
-      <h1 class="Title">Quiz-App</h1>
-    </header>
+    <header><h1 class="Title">Bookmarks</h1></header>
     <main>
       <article class="Card">
         <h2 class="Card__title">Frage 1</h2>
         <img
-          src="assets/bookmark-svgrepo-com.svg"
-          alt="unchecked bookmark"
-          class="Card__bookmark"
+          src="assets/bookmark-alt-svgrepo-com.svg"
+          alt="checked bookmark"
+          class="Card__bookmark--active"
         />
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -30,7 +28,8 @@
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-        <button type="button" class="Button__default">Show Answer</button>
+        <button type="button" class="Button__default">Hide Answer</button>
+        <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
         <div class="Card__tag__wrapper">
           <p class="Card__tags">Tag 1</p>
           <p class="Card__tags">Tag 2</p>
@@ -56,7 +55,8 @@
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-        <button type="button" class="Button__default">Show Answer</button>
+        <button type="button" class="Button__default">Hide Answer</button>
+        <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
         <div class="Card__tag__wrapper">
           <p class="Card__tags">Tag 1</p>
           <p class="Card__tags">Tag 2</p>
@@ -66,33 +66,6 @@
       </article>
       <article class="Card">
         <h2 class="Card__title">Frage 3</h2>
-        <img
-          src="assets/bookmark-svgrepo-com.svg"
-          alt="unchecked bookmark"
-          class="Card__bookmark"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <button type="button" class="Button__default">Show Answer</button>
-        <div class="Card__tag__wrapper">
-          <p class="Card__tags">Tag 1</p>
-          <p class="Card__tags">Tag 2</p>
-          <p class="Card__tags">Tag 3</p>
-          <p class="Card__tags">Tag 4</p>
-        </div>
-      </article>
-      <article class="Card">
-        <h2 class="Card__title">Frage 4</h2>
-
         <img
           src="assets/bookmark-alt-svgrepo-com.svg"
           alt="checked bookmark"
@@ -109,7 +82,8 @@
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-        <button type="button" class="Button__default">Show Answer</button>
+        <button type="button" class="Button__default">Hide Answer</button>
+        <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
         <div class="Card__tag__wrapper">
           <p class="Card__tags">Tag 1</p>
           <p class="Card__tags">Tag 2</p>
@@ -119,13 +93,13 @@
       </article>
     </main>
     <footer class="Navbar__wrapper">
-      <a class="Navbar__content Navbar--active" href="index.html"
+      <a class="Navbar__content" href="index.html"
         ><img
           src="assets/home-svgrepo-com.svg"
           class="Navbar__images"
           alt="navigate to home"
       /></a>
-      <a class="Navbar__content" href="bookmarks.html"
+      <a class="Navbar__content Navbar--active" href="bookmarks.html"
         ><img
           src="assets/bookmark-alt-svgrepo-com.svg"
           class="Navbar__images"
