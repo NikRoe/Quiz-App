@@ -18,6 +18,7 @@
   padding: 0.7rem;
   border-radius: 2rem;
   color: black;
+  text-align: center;
 }
 
 .Navbar--active {
@@ -28,4 +29,9 @@
 .Navbar__content:hover {
   background: rgba(128, 0, 0, 0.5);
   cursor: pointer;
+}
+
+.Navbar__images {
+  height: 3rem;
+  width: 7rem;
 }
