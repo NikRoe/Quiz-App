@@ -16,7 +16,7 @@
   color: rgb(243, 239, 239);
   text-decoration: none;
   padding: 0.7rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   color: black;
   text-align: center;
 }
@@ -34,4 +34,15 @@
 .Navbar__images {
   height: 3rem;
   width: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar__wrapper {
+    width: 95vw;
+    gap: 0.5rem;
+  }
+
+  .Navbar__images {
+    width: 12.5vw;
+  }
 }
