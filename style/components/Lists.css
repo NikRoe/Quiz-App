@@ -1,7 +1,15 @@
 .List__default {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 20vw);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   justify-items: center;
+}
+
+.List__tag {
+  background-color: rgba(128, 0, 0, 0.5);
+  color: black;
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
 }

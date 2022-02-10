@@ -3,3 +3,10 @@
   height: auto;
   border-radius: 10%;
 }
+
+.Image__container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
