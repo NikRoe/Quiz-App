@@ -6,7 +6,7 @@ export const Default = () => /*html*/ `
 <article class="Card">
   <h2 class="Card__title">Frage 1</h2>
   <img
-  src="assets/bookmark-svgrepo-com.svg"
+  src="../../assets/bookmars-svgrepo-com.svg"
   alt="unchecked bookmark"
   class="Card__bookmark"
 />
