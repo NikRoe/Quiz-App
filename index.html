@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -30,7 +31,12 @@
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
-        <button type="button" class="Button__default">Show Answer</button>
+        <button type="button" class="Button__default" data-js="first-button">
+          Show Answer
+        </button>
+        <p class="display-toggle" data-js="first-answer">
+          Unheimlich gute Antwort, die keine Fragen offen lässt.
+        </p>
         <div class="Card__tag__wrapper">
           <p class="Card__tags">Tag 1</p>
           <p class="Card__tags">Tag 2</p>
