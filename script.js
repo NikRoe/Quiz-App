@@ -6,4 +6,9 @@ const firstAnswer = document.querySelector('[data-js="first-answer"]');
 
 showAnswer.addEventListener("click", () => {
   firstAnswer.classList.toggle("display-toggle");
+  if (showAnswer.textContent === "Hide answer") {
+    showAnswer.textContent = "Show answer";
+  } else {
+    showAnswer.textContent = "Hide answer";
+  }
 });
