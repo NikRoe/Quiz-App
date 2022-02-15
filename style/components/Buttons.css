@@ -6,7 +6,7 @@
 .Button__default {
   font-family: inherit;
   cursor: pointer;
-  background-color: rgba(128, 0, 0, 0.5);
+  background-color: var(--main-bg-color-maroon);
   padding: 1rem;
   border: white 1rem solid;
   border-radius: 50%;
@@ -16,7 +16,7 @@
 .Button__default--bottom {
   font-family: inherit;
   cursor: pointer;
-  background-color: rgba(128, 0, 0, 0.5);
+  background-color: var(--main-bg-color-maroon);
   padding: 1rem;
   border: white 1rem solid;
   border-radius: 50%;

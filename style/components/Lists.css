@@ -7,7 +7,7 @@
 }
 
 .List__tag {
-  background-color: rgba(128, 0, 0, 0.5);
+  background-color: var(--main-bg-color-maroon);
   color: black;
   text-decoration: none;
   padding: 0.7rem;

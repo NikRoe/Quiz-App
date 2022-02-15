@@ -12,22 +12,21 @@
 }
 
 .Navbar__content {
-  background-color: #eeeeee;
-  color: rgb(243, 239, 239);
+  background-color: #eee;
+  color: rgb(243 239 239);
   text-decoration: none;
   padding: 0.7rem;
   border-radius: 1.5rem;
-  color: black;
   text-align: center;
 }
 
 .Navbar--active {
-  background-color: rgba(128, 0, 0, 0.7);
+  background-color: rgba(128 0 0 / 70%);
   color: black;
 }
 
 .Navbar__content:hover {
-  background: rgba(128, 0, 0, 0.5);
+  background-color: var(--main-bg-color-maroon);
   cursor: pointer;
 }
 
