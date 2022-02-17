@@ -38,9 +38,9 @@ bookmarkImage?.addEventListener("click", () => {
     "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
   ) {
     bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
-  } else if (bookmarkImage.src === "assets/bookmark-svgrepo-com.svg") {
-    bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
   } else {
     bookmarkImage.src = "assets/bookmark-svgrepo-com.svg";
   }
 });
+
+console.log(bookmarkImage.src);
