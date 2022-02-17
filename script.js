@@ -27,3 +27,10 @@ textfieldInput?.addEventListener("input", () => {
     textfieldCounter.textContent = "No more symbols left!!! :(";
   }
 });
+
+// const indexPage = document.querySelector('[data-js="index-Page"]');
+// const indexNavbar = document.querySelector('[data-js="index-Navbar"]');
+
+// indexNavbar?.addEventListener("click", () => {
+//   indexPage.classList.toggle("display-toggle");
+// });
