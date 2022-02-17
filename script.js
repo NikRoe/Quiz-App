@@ -28,9 +28,19 @@ textfieldInput?.addEventListener("input", () => {
   }
 });
 
-// const indexPage = document.querySelector('[data-js="index-Page"]');
-// const indexNavbar = document.querySelector('[data-js="index-Navbar"]');
+/* define event for bookmark-icon exchange when clicked */
 
-// indexNavbar?.addEventListener("click", () => {
-//   indexPage.classList.toggle("display-toggle");
-// });
+const bookmarkImage = document.querySelector('[data-js="bookmark-image"]');
+
+bookmarkImage?.addEventListener("click", () => {
+  if (
+    bookmarkImage.src ===
+    "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
+  ) {
+    bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
+  } else {
+    bookmarkImage.src = "assets/bookmark-svgrepo-com.svg";
+  }
+});
+
+console.log(bookmarkImage.src);
