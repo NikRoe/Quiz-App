@@ -38,6 +38,18 @@ bookmarkImage?.addEventListener("click", () => {
     "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
   ) {
     bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
+  } else if (
+    bookmarkImage.src ===
+    "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg"
+  ) {
+    bookmarkImage.src =
+      "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg";
+  } else if (
+    bookmarkImage.src ===
+    "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg"
+  ) {
+    bookmarkImage.src =
+      "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg";
   } else {
     bookmarkImage.src = "assets/bookmark-svgrepo-com.svg";
   }
