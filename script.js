@@ -57,6 +57,9 @@ bookmarkImage?.addEventListener("click", () => {
 
 console.log(bookmarkImage.src);
 
+/* create variables for each mayor section and corresponding navbar part.
+add events for each navbar part to en-/disable mayor section's visibility */
+
 const indexPage = document.querySelector('[data-js="index-Page"]');
 const bookmarksPage = document.querySelector('[data-js="bookmarks-Page"]');
 const createPage = document.querySelector('[data-js="create-Page"]');
