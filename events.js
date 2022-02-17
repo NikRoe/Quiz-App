@@ -7,3 +7,6 @@ const textfieldCounter = document.querySelector('[data-js="input-counter"]');
 textfieldInput.addEventListener("input", () => {
   textfieldCounter.textContent = textfieldInput.value.length;
 });
+
+// console.log(textfieldInput);
+// console.log(textfieldCounter);
