@@ -4,7 +4,7 @@ by default, the firstAnswer is hidden on opening the page and can be toggled */
 const showAnswer = document.querySelector('[data-js="first-button"]');
 const firstAnswer = document.querySelector('[data-js="first-answer"]');
 
-showAnswer.addEventListener("click", () => {
+showAnswer?.addEventListener("click", () => {
   firstAnswer.classList.toggle("display-toggle");
   if (showAnswer.textContent === "Hide answer") {
     showAnswer.textContent = "Show answer";
@@ -16,12 +16,14 @@ showAnswer.addEventListener("click", () => {
 /* define vars and event for getting a counter of how many symbols
  have been put into the textarea of the form */
 
-// const textfieldInput = document.querySelector('[data-js="input-area"]');
-// const textfieldCounter = document.querySelector('[data-js="input-counter"]');
+const textfieldInput = document.querySelector('[data-js="input-area"]');
+const textfieldCounter = document.querySelector('[data-js="input-counter"]');
 
-// textfieldInput.addEventListener("input", () => {
-//   textfieldCounter.textContent = textfieldInput.value.length;
-// });
-
-// console.log(textfieldInput);
-// console.log(textfieldCounter);
+textfieldInput?.addEventListener("input", () => {
+  if (textfieldInput.value.length <= 140) {
+    textfieldCounter.textContent =
+      140 - textfieldInput.value.length + " symbols left";
+  } else {
+    textfieldCounter.textContent = "No more symbols left!!! :(";
+  }
+});

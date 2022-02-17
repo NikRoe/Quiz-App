@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="events.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Create</title>
   </head>
   <body>
@@ -32,8 +32,9 @@
             cols="30"
             required
             data-js="input-area"
+            maxlength="140"
           ></textarea>
-          <div>Count: <span data-js="input-counter">0</span></div>
+          <div><span data-js="input-counter">140 symbols left</span></div>
         </fieldset>
         <fieldset class="Form__fieldset">
           <label for="answer-input" class="Form__label">Answer</label>
