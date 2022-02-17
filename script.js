@@ -43,4 +43,10 @@ bookmarkImage?.addEventListener("click", () => {
   }
 });
 
-console.log(bookmarkImage.src);
+bookmarkImage?.addEventListener("click", () => {
+  if (bookmarkImage.src === "assets/bookmark-svgrepo-com.svg") {
+    bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
+  } else {
+    bookmarkImage.src = "assets/bookmark-svgrepo-com.svg";
+  }
+});
