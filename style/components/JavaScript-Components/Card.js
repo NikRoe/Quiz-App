@@ -25,24 +25,12 @@ const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-image"]');
 
 bookmarkIcons.forEach(bookmark => {
   bookmark.addEventListener("click", () => {
-    if (
-      bookmark.src === "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
-    ) {
-      bookmark.src = "assets/bookmark-alt-svgrepo-com.svg";
-    } else if (
-      bookmark.src ===
-      "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg"
-    ) {
-      bookmark.src =
-        "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg";
-    } else if (
-      bookmark.src ===
-      "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg"
-    ) {
-      bookmark.src =
-        "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg";
+    if (bookmark.classList.contains("Card__bookmark-active")) {
+      bookmark.classList.remove("Card__bookmark-active");
+      bookmark.classList.add("Card__bookmark-inactive");
     } else {
-      bookmark.src = "assets/bookmark-svgrepo-com.svg";
+      bookmark.classList.add("Card__bookmark-active");
+      bookmark.classList.remove("Card__bookmark-inactive");
     }
   });
 });

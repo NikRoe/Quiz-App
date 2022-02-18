@@ -10,16 +10,17 @@
   </head>
   <body>
     <main>
+      <!-- Index Page -->
       <div data-js="index-Page">
         <header>
           <h1 class="Title">Quiz-App</h1>
         </header>
+
         <article class="Card">
           <h2 class="Card__title">Frage 1</h2>
           <img
-            src="assets/bookmark-svgrepo-com.svg"
             alt="unchecked bookmark"
-            class="Card__bookmark"
+            class="Card__bookmark-active Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -33,6 +34,7 @@
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
+
           <div data-js="answer-container">
             <button
               type="button"
@@ -55,9 +57,8 @@
         <article class="Card">
           <h2 class="Card__title">Frage 2</h2>
           <img
-            src="assets/bookmark-svgrepo-com.svg"
             alt="unchecked bookmark"
-            class="Card__bookmark"
+            class="Card__bookmark-active Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -93,9 +94,8 @@
         <article class="Card">
           <h2 class="Card__title">Frage 3</h2>
           <img
-            src="assets/bookmark-svgrepo-com.svg"
             alt="unchecked bookmark"
-            class="Card__bookmark"
+            class="Card__bookmark-active Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -132,9 +132,8 @@
           <h2 class="Card__title">Frage 4</h2>
 
           <img
-            src="assets/bookmark-svgrepo-com.svg"
             alt="unchecked bookmark"
-            class="Card__bookmark"
+            class="Card__bookmark-active Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -168,14 +167,14 @@
           </div>
         </article>
       </div>
+      <!-- Bookmarks Page -->
       <div class="display-toggle" data-js="bookmarks-Page">
         <h2 class="Title">Bookmarks</h2>
         <article class="Card">
           <h2 class="Card__title">Frage 1</h2>
           <img
-            src="assets/bookmark-alt-svgrepo-com.svg"
-            alt="checked bookmark"
-            class="Card__bookmark--active"
+            alt="unchecked bookmark"
+            class="Card__bookmark-inactive Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -211,9 +210,8 @@
         <article class="Card">
           <h2 class="Card__title">Frage 2</h2>
           <img
-            src="assets/bookmark-alt-svgrepo-com.svg"
-            alt="checked bookmark"
-            class="Card__bookmark--active"
+            alt="unchecked bookmark"
+            class="Card__bookmark-inactive Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -249,9 +247,8 @@
         <article class="Card">
           <h2 class="Card__title">Frage 3</h2>
           <img
-            src="assets/bookmark-alt-svgrepo-com.svg"
-            alt="checked bookmark"
-            class="Card__bookmark--active"
+            alt="unchecked bookmark"
+            class="Card__bookmark-inactive Card__bookmark"
             data-js="bookmark-image"
           />
           <p>
@@ -285,6 +282,7 @@
           </div>
         </article>
       </div>
+      <!-- Create Page -->
       <div class="display-toggle" data-js="create-Page">
         <h2 id="form-heading" class="Form__outertext Title">
           Create your own questions
@@ -348,6 +346,7 @@
           </div>
         </form>
       </div>
+      <!-- Profile Page -->
       <div class="display-toggle" data-js="profile-Page">
         <h2 class="Title">Profile</h2>
         <div class="Image__container">
@@ -381,6 +380,7 @@
           <button type="button" class="Button__default--bottom">Logout</button>
         </div>
       </div>
+      <!-- Navbar -->
       <nav class="Navbar__wrapper">
         <a class="Navbar__content Navbar--active" data-js="index-navbar"
           ><img
