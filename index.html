@@ -176,6 +176,7 @@
             src="assets/bookmark-alt-svgrepo-com.svg"
             alt="checked bookmark"
             class="Card__bookmark--active"
+            data-js="bookmark-image"
           />
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -188,8 +189,18 @@
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <button type="button" class="Button__default">Hide Answer</button>
-          <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
+          <div data-js="answer-container">
+            <button
+              type="button"
+              class="Button__default"
+              data-js="answer-button"
+            >
+              Show Answer
+            </button>
+            <p class="display-toggle" data-js="answer">
+              Unheimlich gute Antwort, die keine Fragen offen lässt.
+            </p>
+          </div>
           <div class="Card__tag__wrapper">
             <p class="Card__tags">Tag 1</p>
             <p class="Card__tags">Tag 2</p>
@@ -203,6 +214,7 @@
             src="assets/bookmark-alt-svgrepo-com.svg"
             alt="checked bookmark"
             class="Card__bookmark--active"
+            data-js="bookmark-image"
           />
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -215,8 +227,18 @@
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <button type="button" class="Button__default">Hide Answer</button>
-          <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
+          <div data-js="answer-container">
+            <button
+              type="button"
+              class="Button__default"
+              data-js="answer-button"
+            >
+              Show Answer
+            </button>
+            <p class="display-toggle" data-js="answer">
+              Unheimlich gute Antwort, die keine Fragen offen lässt.
+            </p>
+          </div>
           <div class="Card__tag__wrapper">
             <p class="Card__tags">Tag 1</p>
             <p class="Card__tags">Tag 2</p>
@@ -230,6 +252,7 @@
             src="assets/bookmark-alt-svgrepo-com.svg"
             alt="checked bookmark"
             class="Card__bookmark--active"
+            data-js="bookmark-image"
           />
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -242,8 +265,18 @@
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <button type="button" class="Button__default">Hide Answer</button>
-          <p>Unheimlich gute Antwort, die alle Fragen auf einmal klärt</p>
+          <div data-js="answer-container">
+            <button
+              type="button"
+              class="Button__default"
+              data-js="answer-button"
+            >
+              Show Answer
+            </button>
+            <p class="display-toggle" data-js="answer">
+              Unheimlich gute Antwort, die keine Fragen offen lässt.
+            </p>
+          </div>
           <div class="Card__tag__wrapper">
             <p class="Card__tags">Tag 1</p>
             <p class="Card__tags">Tag 2</p>
@@ -264,7 +297,7 @@
           aria-labelledby="form-heading"
           aria-describedby="form-description"
         >
-          <fieldset class="Form__fieldset">
+          <fieldset class="Form__fieldset" data-js="textfield-fieldset">
             <label for="question-input" class="Form__label">Question</label>
             <textarea
               class="Form__textarea"
@@ -279,7 +312,7 @@
             ></textarea>
             <div><span data-js="input-counter">140 symbols left</span></div>
           </fieldset>
-          <fieldset class="Form__fieldset">
+          <fieldset class="Form__fieldset" data-js="textfield-fieldset">
             <label for="answer-input" class="Form__label">Answer</label>
             <textarea
               class="Form__textarea"
@@ -289,7 +322,10 @@
               rows="5"
               cols="30"
               required
+              data-js="input-area"
+              maxlength="140"
             ></textarea>
+            <div><span data-js="input-counter">140 symbols left</span></div>
           </fieldset>
           <fieldset class="Form__fieldset">
             <label for="tag-input" class="Form__label">Tags</label>
