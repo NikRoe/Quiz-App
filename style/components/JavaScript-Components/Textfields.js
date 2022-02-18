@@ -3,15 +3,11 @@
 
 const textFields = document.querySelectorAll('[data-js="textfield-fieldset"]');
 
-console.log(textFields);
-
 textFields.forEach(inputField => {
   const textfieldCounter = inputField.querySelector(
     '[data-js="input-counter"]'
   );
   const textfieldInput = inputField.querySelector('[data-js="input-area"]');
-  console.log(textfieldCounter, "counter");
-  console.log(textfieldInput, "input");
   inputField.addEventListener("input", () => {
     if (textfieldInput.value.length <= 140) {
       textfieldCounter.textContent =
