@@ -1,16 +1,22 @@
-/* define vars for the button (showAnswer) and the answer (firstAnswer)
-by default, the firstAnswer is hidden on opening the page and can be toggled */
+/* define vars for buttons and the answers
+by default, the answers are hidden on opening the page 
+and can be toggled by clicking on the show answer button*/
 
-const showAnswer = document.querySelector('[data-js="first-button"]');
-const firstAnswer = document.querySelector('[data-js="first-answer"]');
+const answerContainer = document.querySelectorAll(
+  '[data-js="answer-container"]'
+);
 
-showAnswer.addEventListener("click", () => {
-  firstAnswer.classList.toggle("display-toggle");
-  if (showAnswer.textContent === "Hide answer") {
-    showAnswer.textContent = "Show answer";
-  } else {
-    showAnswer.textContent = "Hide answer";
-  }
+answerContainer.forEach(answer => {
+  const answerButton = answer.querySelector('[data-js="answer-button"]');
+  const answerAnswer = answer.querySelector('[data-js="answer"]');
+  answerButton.addEventListener("click", () => {
+    answerAnswer.classList.toggle("display-toggle");
+    if (answerButton.textContent === "Hide answer") {
+      answerButton.textContent = "Show answer";
+    } else {
+      answerButton.textContent = "Hide answer";
+    }
+  });
 });
 
 /* define vars and event for getting a counter of how many symbols
@@ -117,7 +123,3 @@ profileNavbar.addEventListener("click", () => {
   createPage.classList.add("display-toggle");
   window.scrollTo(0, 0);
 });
-
-const allAnswerButtons = document.querySelectorAll(".Button__default");
-
-console.log(allAnswerButtons);
