@@ -33,11 +33,18 @@
   border-radius: 2rem;
 }
 
-.Card__bookmark,
-.Card__bookmark--active {
+.Card__bookmark {
   position: absolute;
   top: -15px;
   right: 15px;
   height: 3rem;
   width: 7rem;
+}
+
+.Card__bookmark-active {
+  content: url(../../assets/bookmark-svgrepo-com.svg);
+}
+
+.Card__bookmark-inactive {
+  content: url(../../assets/bookmark-alt-svgrepo-com.svg);
 }

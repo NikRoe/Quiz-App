@@ -11,6 +11,7 @@
   border: white 1rem solid;
   border-radius: 50%;
   font-size: large;
+  max-width: 150px;
 }
 
 .Button__default--bottom {
