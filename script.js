@@ -4,7 +4,7 @@ by default, the firstAnswer is hidden on opening the page and can be toggled */
 const showAnswer = document.querySelector('[data-js="first-button"]');
 const firstAnswer = document.querySelector('[data-js="first-answer"]');
 
-showAnswer?.addEventListener("click", () => {
+showAnswer.addEventListener("click", () => {
   firstAnswer.classList.toggle("display-toggle");
   if (showAnswer.textContent === "Hide answer") {
     showAnswer.textContent = "Show answer";
@@ -19,7 +19,7 @@ showAnswer?.addEventListener("click", () => {
 const textfieldInput = document.querySelector('[data-js="input-area"]');
 const textfieldCounter = document.querySelector('[data-js="input-counter"]');
 
-textfieldInput?.addEventListener("input", () => {
+textfieldInput.addEventListener("input", () => {
   if (textfieldInput.value.length <= 140) {
     textfieldCounter.textContent =
       140 - textfieldInput.value.length + " symbols left";
@@ -32,7 +32,7 @@ textfieldInput?.addEventListener("input", () => {
 
 const bookmarkImage = document.querySelector('[data-js="bookmark-image"]');
 
-bookmarkImage?.addEventListener("click", () => {
+bookmarkImage.addEventListener("click", () => {
   if (
     bookmarkImage.src ===
     "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
@@ -70,7 +70,7 @@ const bookmarksNavbar = document.querySelector('[data-js="bookmarks-navbar"]');
 const createNavbar = document.querySelector('[data-js="create-navbar"]');
 const profileNavbar = document.querySelector('[data-js="profile-navbar"]');
 
-indexNavbar?.addEventListener("click", () => {
+indexNavbar.addEventListener("click", () => {
   indexNavbar.classList.add("Navbar--active");
   bookmarksNavbar.classList.remove("Navbar--active");
   createNavbar.classList.remove("Navbar--active");
@@ -79,9 +79,10 @@ indexNavbar?.addEventListener("click", () => {
   bookmarksPage.classList.add("display-toggle");
   createPage.classList.add("display-toggle");
   profilePage.classList.add("display-toggle");
+  window.scrollTo(0, 0);
 });
 
-bookmarksNavbar?.addEventListener("click", () => {
+bookmarksNavbar.addEventListener("click", () => {
   bookmarksNavbar.classList.add("Navbar--active");
   indexNavbar.classList.remove("Navbar--active");
   createNavbar.classList.remove("Navbar--active");
@@ -90,9 +91,10 @@ bookmarksNavbar?.addEventListener("click", () => {
   indexPage.classList.add("display-toggle");
   createPage.classList.add("display-toggle");
   profilePage.classList.add("display-toggle");
+  window.scrollTo(0, 0);
 });
 
-createNavbar?.addEventListener("click", () => {
+createNavbar.addEventListener("click", () => {
   createNavbar.classList.add("Navbar--active");
   indexNavbar.classList.remove("Navbar--active");
   bookmarksNavbar.classList.remove("Navbar--active");
@@ -101,9 +103,10 @@ createNavbar?.addEventListener("click", () => {
   bookmarksPage.classList.add("display-toggle");
   indexPage.classList.add("display-toggle");
   profilePage.classList.add("display-toggle");
+  window.scrollTo(0, 0);
 });
 
-profileNavbar?.addEventListener("click", () => {
+profileNavbar.addEventListener("click", () => {
   profileNavbar.classList.add("Navbar--active");
   indexNavbar.classList.remove("Navbar--active");
   bookmarksNavbar.classList.remove("Navbar--active");
@@ -112,4 +115,9 @@ profileNavbar?.addEventListener("click", () => {
   bookmarksPage.classList.add("display-toggle");
   indexPage.classList.add("display-toggle");
   createPage.classList.add("display-toggle");
+  window.scrollTo(0, 0);
 });
+
+const allAnswerButtons = document.querySelectorAll(".Button__default");
+
+console.log(allAnswerButtons);
