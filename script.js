@@ -36,32 +36,31 @@ textfieldInput.addEventListener("input", () => {
 
 /* define event for bookmark-icon exchange when clicked */
 
-const bookmarkImage = document.querySelector('[data-js="bookmark-image"]');
+const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-image"]');
 
-bookmarkImage.addEventListener("click", () => {
-  if (
-    bookmarkImage.src ===
-    "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
-  ) {
-    bookmarkImage.src = "assets/bookmark-alt-svgrepo-com.svg";
-  } else if (
-    bookmarkImage.src ===
-    "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg"
-  ) {
-    bookmarkImage.src =
-      "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg";
-  } else if (
-    bookmarkImage.src ===
-    "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg"
-  ) {
-    bookmarkImage.src =
-      "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg";
-  } else {
-    bookmarkImage.src = "assets/bookmark-svgrepo-com.svg";
-  }
+bookmarkIcons.forEach(bookmark => {
+  bookmark.addEventListener("click", () => {
+    if (
+      bookmark.src === "http://127.0.0.1:3000/assets/bookmark-svgrepo-com.svg"
+    ) {
+      bookmark.src = "assets/bookmark-alt-svgrepo-com.svg";
+    } else if (
+      bookmark.src ===
+      "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg"
+    ) {
+      bookmark.src =
+        "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg";
+    } else if (
+      bookmark.src ===
+      "https://quiz-app-bice.vercel.app/assets/bookmark-alt-svgrepo-com.svg"
+    ) {
+      bookmark.src =
+        "https://quiz-app-bice.vercel.app/assets/bookmark-svgrepo-com.svg";
+    } else {
+      bookmark.src = "assets/bookmark-svgrepo-com.svg";
+    }
+  });
 });
-
-console.log(bookmarkImage.src);
 
 /* create variables for each mayor section and corresponding navbar part.
 add events for each navbar part to en-/disable mayor section's visibility */
