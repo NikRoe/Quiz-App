@@ -11,50 +11,53 @@ const bookmarksNavbar = document.querySelector('[data-js="bookmarks-navbar"]');
 const createNavbar = document.querySelector('[data-js="create-navbar"]');
 const profileNavbar = document.querySelector('[data-js="profile-navbar"]');
 
+const allPages = document.querySelectorAll(".page");
+const allNavbarElements = document.querySelectorAll(".Navbar__content");
+
 indexNavbar.addEventListener("click", () => {
+  allNavbarElements.forEach(element => {
+    element.classList.remove("Navbar--active");
+  });
   indexNavbar.classList.add("Navbar--active");
-  bookmarksNavbar.classList.remove("Navbar--active");
-  createNavbar.classList.remove("Navbar--active");
-  profileNavbar.classList.remove("Navbar--active");
+  allPages.forEach(page => {
+    page.classList.add("display-toggle");
+  });
   indexPage.classList.remove("display-toggle");
-  bookmarksPage.classList.add("display-toggle");
-  createPage.classList.add("display-toggle");
-  profilePage.classList.add("display-toggle");
   window.scrollTo(0, 0);
 });
 
 bookmarksNavbar.addEventListener("click", () => {
+  allNavbarElements.forEach(element => {
+    element.classList.remove("Navbar--active");
+  });
   bookmarksNavbar.classList.add("Navbar--active");
-  indexNavbar.classList.remove("Navbar--active");
-  createNavbar.classList.remove("Navbar--active");
-  profileNavbar.classList.remove("Navbar--active");
+  allPages.forEach(page => {
+    page.classList.add("display-toggle");
+  });
   bookmarksPage.classList.remove("display-toggle");
-  indexPage.classList.add("display-toggle");
-  createPage.classList.add("display-toggle");
-  profilePage.classList.add("display-toggle");
   window.scrollTo(0, 0);
 });
 
 createNavbar.addEventListener("click", () => {
+  allNavbarElements.forEach(element => {
+    element.classList.remove("Navbar--active");
+  });
   createNavbar.classList.add("Navbar--active");
-  indexNavbar.classList.remove("Navbar--active");
-  bookmarksNavbar.classList.remove("Navbar--active");
-  profileNavbar.classList.remove("Navbar--active");
+  allPages.forEach(page => {
+    page.classList.add("display-toggle");
+  });
   createPage.classList.remove("display-toggle");
-  bookmarksPage.classList.add("display-toggle");
-  indexPage.classList.add("display-toggle");
-  profilePage.classList.add("display-toggle");
   window.scrollTo(0, 0);
 });
 
 profileNavbar.addEventListener("click", () => {
+  allNavbarElements.forEach(element => {
+    element.classList.remove("Navbar--active");
+  });
   profileNavbar.classList.add("Navbar--active");
-  indexNavbar.classList.remove("Navbar--active");
-  bookmarksNavbar.classList.remove("Navbar--active");
-  createNavbar.classList.remove("Navbar--active");
+  allPages.forEach(page => {
+    page.classList.add("display-toggle");
+  });
   profilePage.classList.remove("display-toggle");
-  bookmarksPage.classList.add("display-toggle");
-  indexPage.classList.add("display-toggle");
-  createPage.classList.add("display-toggle");
   window.scrollTo(0, 0);
 });
