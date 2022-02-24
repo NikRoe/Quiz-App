@@ -25,7 +25,48 @@ form.addEventListener("submit", event => {
   questionElement.focus();
 });
 
-/* filtering via filter form */
+/* creating default set of cards as placeholders */
+
+let cards = [
+  {
+    question: "What is git?",
+    answer: "Git is a tool to work with code.",
+    tags: ["css", "shell", "web"],
+    isBookmarked: false,
+  },
+  {
+    question: "What is html?",
+    answer: "HTML is Hypertext Markup Language. Google it.",
+    tags: ["css", "html", "web"],
+    isBookmarked: true,
+  },
+  {
+    question: "What is css?",
+    answer: "Cascading style sheets. Google it.",
+    tags: ["css", "basic", "web"],
+    isBookmarked: false,
+  },
+  {
+    question: "What is git?",
+    answer: "Git is a tool to work with code.",
+    tags: ["css", "git", "web"],
+    isBookmarked: true,
+  },
+  {
+    question: "What is html?",
+    answer: "HTML is Hypertext Markup Language. Google it.",
+    tags: ["css", "shell", "web"],
+    isBookmarked: true,
+  },
+  {
+    question: "What is css?",
+    answer: "Cascading style sheets. Google it.",
+    tags: ["css", "basic", "git"],
+    isBookmarked: false,
+  },
+];
+
+/* declaring filterform events */
 
 const filterForm = document.querySelector("[data-js=filter-form]");
 const cardsContainer = document.querySelector("[data-js=cards]");
@@ -39,45 +80,6 @@ const bookmarkedCardsContainer = document.querySelector(
 
 let currentFilter = "all";
 
-let cards = [
-  {
-    question: "What is git?",
-    answer: "Git is a tool to work with code.",
-    tags: ["css", "shell", "web"],
-    isBookmarked: false,
-  },
-  {
-    question: "What is html?",
-    answer: "HTML is Hypertext Markup Language. Google it.",
-    tags: ["css", "shell", "web"],
-    isBookmarked: true,
-  },
-  {
-    question: "What is css?",
-    answer: "Cascading style sheets. Google it.",
-    tags: ["css", "basic", "web"],
-    isBookmarked: false,
-  },
-  {
-    question: "What is git?",
-    answer: "Git is a tool to work with code.",
-    tags: ["css", "shell", "web"],
-    isBookmarked: true,
-  },
-  {
-    question: "What is html?",
-    answer: "HTML is Hypertext Markup Language. Google it.",
-    tags: ["css", "shell", "web"],
-    isBookmarked: true,
-  },
-  {
-    question: "What is css?",
-    answer: "Cascading style sheets. Google it.",
-    tags: ["css", "basic", "web"],
-    isBookmarked: false,
-  },
-];
-
 filterForm.addEventListener("change", () => {
   currentFilter = filterForm.elements["tag-filter"].value;
   renderCards();
@@ -89,6 +91,8 @@ filterFormBookmarked.addEventListener("change", () => {
 });
 
 renderCards();
+
+/* declaring renderCards function for both use-cases*/
 
 function renderCards() {
   cardsContainer.innerHTML = "";
@@ -135,6 +139,8 @@ function renderCards() {
         }
       });
     });
+
+  /* part for the bookmarks-page */
 
   bookmarkedCardsContainer.innerHTML = "";
 
