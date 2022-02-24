@@ -16,35 +16,29 @@
   margin-top: 0;
 }
 
-.Card__tag__wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-  border-radius: 2rem;
-  padding: 0.5rem;
-}
-
-.Card__tags {
-  background-color: var(--main-bg-color-maroon);
-  color: black;
-  text-decoration: none;
-  padding: 0.7rem;
-  border-radius: 2rem;
-}
-
 .Card__bookmark {
   position: absolute;
   top: -15px;
   right: 15px;
   height: 3rem;
   width: 7rem;
-}
-
-.Card__bookmark-active {
   content: url(../../assets/bookmark-svgrepo-com.svg);
 }
 
 .Card__bookmark-inactive {
   content: url(../../assets/bookmark-alt-svgrepo-com.svg);
+}
+
+.Card__tag-list[role="list"] {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 0;
+}
+
+.Card__tag {
+  padding: 2px 10px;
+  background: var(--main-bg-color-maroon);
+  border-radius: 50%;
 }
